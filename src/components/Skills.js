@@ -6,6 +6,7 @@ import meter1 from '../assets/img/meter1.svg';
 import meter2 from '../assets/img/meter2.svg';
 import meter3 from '../assets/img/meter3.svg';
 import colorSharp from '../assets/img/color-sharp.png';
+// import colorSharp2 from '../assets/img/color-sharp2.png';
 
 export const Skills = () => {
     const responsive = {
@@ -35,7 +36,9 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h2>Skills</h2>
-                            <p><LoremIpsum p={1} /></p>
+                            {/* <p> */}
+                                <LoremIpsum p={1} />
+                            {/* </p> */}
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
                                 <img src={meter1} alt='Image'></img>
@@ -58,7 +61,8 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp}/>
+            <img className="background-image-left" src={colorSharp} />
+            {/* <img className="background-image-right" src={colorSharp2}/> */}
         </section>
     )
 }
