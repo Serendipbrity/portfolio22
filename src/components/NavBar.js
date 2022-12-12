@@ -6,6 +6,7 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import me from "../assets/img/Me.jpeg"
 
 export const NavBar = () => {
     // detect/keep track of which link we are on
@@ -38,7 +39,8 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
                 <Navbar.Brand href="#home">
-                    <img src={logo} alt="Logo"/>
+                    <img src={logo} alt="Logo" />
+                    {/* <img src={me} alt="My Picture" id="me"/> */}
           </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className='navbar-toggle-icon'></span>
