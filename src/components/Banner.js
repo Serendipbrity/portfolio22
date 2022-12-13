@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import { LoremIpsum } from "react-lorem-ipsum";
+// import { LoremIpsum } from "react-lorem-ipsum";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
 // import 'animate.css';
@@ -94,7 +94,7 @@ export const Banner = () => {
             </button>
           </Col>
           <Col xs={12} md={6} ls={5}>
-            <img src={headerImg} alr="Header Img" />
+            <img src={headerImg} alr="Header Img" id='headerImg'/>
           </Col>
         </Row>
       </Container>
