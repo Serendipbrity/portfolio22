@@ -1,5 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
+// import 'anime.css';
+// import TrackVisibility from 'react-on-screen';
 // use state to store fields
 import { useState } from "react";
 
@@ -64,30 +66,31 @@ export const Contact = () => {
             {/* when form is submitted  */}
             <form onSubmit={handleSubmit}>
                 <Row>
-                              <Col sm={6} className='px-1'>
+                              <Col size={12} sm={6} className='px-1'>
                                   <input type='text' value={formDetails.firstName} placeholder='First Name' onChange={(e) => onFormUpdate('firstName', e.target.value)}></input>
                               </Col>     
-                              <Col sm={6} className='px-1'>
+                              <Col size={12} sm={6} className='px-1'>
                                   <input type='text' value={formDetails.lastName} placeholder='Last Name' onChange={(e) => onFormUpdate('lastName', e.target.value)}></input>
                               </Col> 
-                              <Col sm={6} className='px-1'>
+                              <Col size={12} sm={6} className='px-1'>
                                   <input type='email' value={formDetails.email} placeholder='Email Address' onChange={(e) => onFormUpdate('email', e.target.value)}></input>
                               </Col>  
-                              <Col sm={6} className='px-1'>
+                              <Col size={12} sm={6} className='px-1'>
                                   <input type='tel' value={formDetails.phone} placeholder='Phone Number' onChange={(e) => onFormUpdate('phone', e.target.value)}></input>
                               </Col>  
-                              <Col>
-                                  <textarea row={6} value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                              </Col>
+                              <Col size={12} className='px-1'>
+                                  <textarea rows='6' value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                             
                               {/* text is a variable so that it can update from send to sending and back */}
                               <button type='submit'><span>{buttonText}</span></button>
-
+                              </Col>
                               {/* display error message if message did not send */}
                               {
                                   status.message && 
                                   <Col>
                                 {/* if message sent successfully, don't display error. Show status message so user knows what is happening */}
-                                  <p className={status.success === false ? "danger" : "success"}>{status.message}</p></Col>
+                      <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                    </Col>
                               }
                 </Row>
             </form>
