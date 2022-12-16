@@ -2,11 +2,17 @@ import { useEffect, useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import logo from '../assets/img/logo.svg';
+// import logo from '../assets/img/logo.svg';
+import lightSerendipbrity from '../assets/img/lightSerendipbrity.png';
+import logo3 from '../assets/img/logo3.png';
+import logolightbulb from '../assets/img/logolightbulb.png';
+import anotherLogo from '../assets/img/anotherLogo.png';
+import justLightbulb from '../assets/img/justLightBulb.png';
+import noDotLightbulb from '../assets/img/noDotLightbulb.png';
 import linkdInIcon from '../assets/img/nav-icon1.svg';
 import githubIcon from '../assets/img/nav-icon4.svg';
 import downloadIcon from '../assets/img/file-download-import-icon.svg';
-import me from "../assets/img/Me.jpeg"
+// import me from "../assets/img/Me.jpeg"
 
 export const NavBar = () => {
     // detect/keep track of which link we are on
@@ -39,7 +45,9 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
                 <Navbar.Brand href="#home">
-                    <img src={logo} alt="Logo" />
+                    <img src={
+                        noDotLightbulb
+                    } alt="Logo" className='logo'/>
                     {/* <img src={me} alt="My Picture" id="me"/> */}
           </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">

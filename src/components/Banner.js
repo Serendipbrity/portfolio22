@@ -3,8 +3,9 @@ import { Row, Col, Container } from "react-bootstrap";
 // import { LoremIpsum } from "react-lorem-ipsum";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
-// import 'animate.css';
-// import TrackerVisibility from 'react-on-screen';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+import { isVisible } from "@testing-library/user-event/dist/utils";
 
 export const Banner = () => {
   // which word is currently displayed on screen, start on first word
@@ -70,28 +71,34 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
-            <h1>
-              {`Hi I'm Brittani `}
-              <br></br>
-              <span className="txt-rotate">
-                <span className="wrap">{text}</span>
-              </span>
-            </h1>
-            {/* <p><LoremIpsum p={1} /></p> */}
-            <p>
-              {" "}
-              I'm a Full Stack Web Developer. My career goals are to work with,
-              learn and grow in a single company long term. I chose this field
-              because it is challenging and offers a potential for exponential
-              growth of knowledge and skill. I enjoy and take pride in
-              overcoming challenges. I get along well with others. I enjoy
-              working in a team or solo.{" "}
-            </p>
-            <button onClick={() => console.log("connect")}>
-              Let's Connect
-              <ArrowRightCircle size={25} />
-            </button>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ''}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>
+                    {`Hi I'm Brittani `}
+                    <br></br>
+                    <span className="txt-rotate">
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                  {/* <p><LoremIpsum p={1} /></p> */}
+                  <p>
+                    {" "}
+                    I'm a Full Stack Web Developer. My career goals are to work with,
+                    learn and grow in a single company long term. I chose this field
+                    because it is challenging and offers a potential for exponential
+                    growth of knowledge and skill. I enjoy and take pride in
+                    overcoming challenges. I get along well with others. I enjoy
+                    working in a team or solo.{" "}
+                  </p>
+                  <button onClick={() => console.log("connect")}>
+                    Let's Connect
+                    <ArrowRightCircle size={25} />
+                  </button>
+                </div>
+              }
+              </TrackVisibility>
           </Col>
           <Col xs={12} md={6} ls={5}>
             <img src={headerImg} alr="Header Img" id='headerImg'/>

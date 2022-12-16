@@ -5,6 +5,9 @@ import projImg1 from '../assets/img/Gators.png';
 import projImg2 from '../assets/img/BelizeFS.png';
 import projImg3 from '../assets/img/GameSaver.png';
 import LoremIpsum from "react-lorem-ipsum";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+
 
 export const Projects = () => {
   const projects = [
@@ -29,10 +32,15 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
-            {/* <p> */}
-            <LoremIpsum p={1} />
-            {/* </p> */}
+          <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__bounce" : ''}>
+                  <h2>Projects</h2>
+                  {/* <p> */}
+                  <LoremIpsum p={1} />
+                  {/* </p> */}
+                </div>}
+                </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id='pills-tab'>
                 <Nav.Item>
