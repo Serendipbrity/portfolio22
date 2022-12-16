@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/', router);
-// go to project root and run npm server to check if server is running 
+// go to project root and run node server to check if server is running 
 app.listen(3000, () => console.log('Server Running'));
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
