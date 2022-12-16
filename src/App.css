@@ -122,7 +122,13 @@ span.navbar-text {
 .social-icon {
     display: inline-block;
     margin-left: 14px;
+
 }
+
+.social-icons-footer-only {
+  margin-top: 10%;
+}
+
 .social-icon a {
     width: 42px;
     height: 42px;

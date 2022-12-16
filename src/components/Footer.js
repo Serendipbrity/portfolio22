@@ -14,7 +14,7 @@ export const Footer = () => {
             <img src={logo} alt="Logo" />
           </Col>
           <Col sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
+            <div className="social-icon social-icons-footer-only">
               <a href="https://github.com/Serendipbrity">
               <img src={navIcon4} />
               </a>
