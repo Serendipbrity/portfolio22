@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/portfolio22/static/css/main.a7564c68.css",
+    "main.js": "/portfolio22/static/js/main.19210ba3.js",
+    "static/js/787.245be69d.chunk.js": "/portfolio22/static/js/787.245be69d.chunk.js",
+    "static/media/Gators.png": "/portfolio22/static/media/Gators.2bc167c8fec190e6d01d.png",
+    "static/media/BelizeFS.png": "/portfolio22/static/media/BelizeFS.87a41d6e1635db36de88.png",
+    "static/media/color-sharp.png": "/portfolio22/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/color-sharp2.png": "/portfolio22/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
+    "static/media/banner-bg.png": "/portfolio22/static/media/banner-bg.cc1273af450504afe755.png",
+    "static/media/header-img.svg": "/portfolio22/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/GameSaver.png": "/portfolio22/static/media/GameSaver.25068e5bae3bc7d09f9a.png",
+    "static/media/CentraNo2-Bold (1).ttf": "/portfolio22/static/media/CentraNo2-Bold (1).2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium (1).ttf": "/portfolio22/static/media/CentraNo2-Medium (1).f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/portfolio22/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/logolightbulb.png": "/portfolio22/static/media/logolightbulb.a18ebf872ac54d8536fb.png",
+    "static/media/anotherLogo.png": "/portfolio22/static/media/anotherLogo.8122b964267a80a5af2f.png",
+    "static/media/footer-bg.png": "/portfolio22/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/noDotLightbulb.png": "/portfolio22/static/media/noDotLightbulb.76e123d4258e3ad4a92f.png",
+    "static/media/contact-img.svg": "/portfolio22/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
+    "static/media/revicons.eot": "/portfolio22/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/portfolio22/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/portfolio22/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/meter2.svg": "/portfolio22/static/media/meter2.1b8f416eccd1ee162218b8528a1c5cdc.svg",
+    "static/media/meter1.svg": "/portfolio22/static/media/meter1.c4085ff859afbd8488e9da47d4953850.svg",
+    "static/media/meter3.svg": "/portfolio22/static/media/meter3.2201f7e4df22bc4b08180210474f28cc.svg",
+    "static/media/logo.svg": "/portfolio22/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
+    "static/media/file-download-import-icon.svg": "/portfolio22/static/media/file-download-import-icon.88b9fcfe9703cfe8a092b2d0d7751dae.svg",
+    "static/media/nav-icon4.svg": "/portfolio22/static/media/nav-icon4.3773aa781822cb0159a18b45de14147f.svg",
+    "index.html": "/portfolio22/index.html",
+    "static/media/nav-icon1.svg": "/portfolio22/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "static/media/nav-icon2.svg": "/portfolio22/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
+    "main.a7564c68.css.map": "/portfolio22/static/css/main.a7564c68.css.map",
+    "main.19210ba3.js.map": "/portfolio22/static/js/main.19210ba3.js.map",
+    "787.245be69d.chunk.js.map": "/portfolio22/static/js/787.245be69d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7564c68.css",
+    "static/js/main.19210ba3.js"
+  ]
+}
